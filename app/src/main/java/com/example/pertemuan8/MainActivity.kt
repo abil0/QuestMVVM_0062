@@ -1,5 +1,6 @@
 package com.example.pertemuan8
 
+
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -9,6 +10,8 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import com.example.pertemuan8.ui.theme.Pertemuan8Theme
+import com.example.pertemuan8.view.uicontroller.SiswaApp
+
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,8 +20,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             Pertemuan8Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
+                    SiswaApp(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
